@@ -60,10 +60,10 @@ function [SSSR, vQ, XYZ, M, iM] = mspm_SSR(X, mvopt, K, VY, Vbeta, vm)
 
 % vvQ                 = spm_imcalc(vm,fullfile(mvopt,'mask.nii'),'prod(X)',{1});% apply mask to the image 'prod(X)'
 
-% to avoid issue with interpolation using spm_imcalc I did the conjuntion
-% between the masks by hand (Lucien 21.09.2019)
+% to avoid issue with interpolation using spm_imcalc conjunction is done by hand
 masks               = vm';
-mask4d = nan(size(vm,1), 121, 145, 121);
+s = size(squeeze(spm_read_vols(spm_vol(masks{1}))));
+mask4d = nan(size(vm,1), s(1), s(2), s(3));
 for i = 1:size(masks,1)
    h = spm_vol(masks{i});
    him = spm_read_vols(h);
