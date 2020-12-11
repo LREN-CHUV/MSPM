@@ -60,7 +60,7 @@ This section describes how to estimate the multivariate model.
 
 ![Multivariate model estimation 4: select output directory](image_doc/image_doc06.png)
 
-![Multivariate model estimation 5: selected directory](image_doc07.png)
+![Multivariate model estimation 5: selected directory](image_doc/iimage_doc07.png)
 
 
 
@@ -69,7 +69,7 @@ This section describes how to estimate the multivariate model.
 - Run batch to estimate the model
 
 
-![Multivariate model estimation 5: run batch]("C:/lren/mspm/MSPM/image_doc/image_doc08.png")
+![Multivariate model estimation 5: run batch](image_doc/image_doc08.png)
 
 
 \newpage
@@ -134,7 +134,7 @@ This section describes how to test hypotheses on the multivariate model. This es
 - To enter a new $c$ contrast on the **design matrix**, press "New contrast" in the Panel $c$ contrast. Note that you can enter a new contrast (or select a pre-existing contrast) only if a $L$ contrast is selected on the left panel.
 
 
-![Set L and c contrasts 8: open c contrast]("C:/lren/mspm/MSPM/image_doc/image_doc16_0.png")
+![Set L and c contrasts 8: open c contrast](image_doc/image_doc16_0.png")
 
 
 - Enter your matrix of contrast (_Note: wether you enter a $t$- or an $F$- contrast, the toolbox will always treat it as an $F$ contrast and the output will be a $F$-map. So to avoid confusion, make sure to always use $F$-contrast._)
