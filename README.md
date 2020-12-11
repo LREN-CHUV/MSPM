@@ -1,12 +1,12 @@
 "Documentation MSPM toolbox"
 
-![text](https://raw.githubusercontent.com/LREN-CHUV/MSPM/master/image_doc/image_doc00.png)
+
 # Preparation of the data
 
 It is strongly adviced to apply z-scoring to your data before the analysis so that the weight of the canonical vectors are interpretable even though the multiple modalities used in the multivariate analysis are not of the same scale. The z-scoring should be applied within each modality and within each voxel. This step can be performed using the function _within_voxel_z_scoring.m_ found in the main folder of the MSPM toolbox. It is very important that the mask you use to constrain the space where the z-scoring is performed (second argument of *within_voxel_z_scoring.m* function) is then used as explicit mask for the univariate models.
-<p>
-![](image_doc/image_doc00.png)
-</p>
+
+![text](https://raw.githubusercontent.com/LREN-CHUV/MSPM/master/image_doc/image_doc00.png)
+
 
 \newpage
 
@@ -14,20 +14,20 @@ It is strongly adviced to apply z-scoring to your data before the analysis so th
 
 The first step to use the classical interface of SPM12 to estimate one univariate model for each of the modality you would like to input in the multivariate model. It is crucial that the univariate models have the exact same design matrix $X$, the design matrix you are interested to test in the multivariate model.
 
-<p>
-![Folder with univariate models for each modality of interest]("C:/lren/mspm/MSPM/image_doc/image_doc01.png")
-</p>
+
+![Folder with univariate models for each modality of interest](image_doc/image_doc01.png)
+
 
 \newpage
 
 # Set path MSPM toolbox
 - Add the MSPM toolbox to you matlab path
 
-<p>
-![Set path to MSPM toolbox]("C:/lren/mspm/MSPM/image_doc/image_doc02.png")
-</p>
 
-\newpage
+![Set path to MSPM toolbox](image_doc/image_doc02.png)
+
+
+
 
 # Multivariate model estimation
 
@@ -36,33 +36,33 @@ This section describes how to estimate the multivariate model.
 
 - Open a SPM batch and select _SPM >> Tools >> MSPM >> Model estimation_
 
-<p>
-![Multivariate model estimation 1: open batch]("C:/lren/mspm/MSPM/image_doc/image_doc03.png")
-</p>
 
-\newpage
+![Multivariate model estimation 1: open batch]("C:/lren/mspm/MSPM/image_doc/image_doc03.png")
+
+
+
 
 
 - Input the _SPM.mat_ files from the univariate analyses in the batch
 
-<p>
-![Multivariate model estimation 2: select SPM.mat files]("C:/lren/mspm/MSPM/image_doc/image_doc04.png")
+
+![Multivariate model estimation 2: select SPM.mat files](image_doc/image_doc04.png)
+
+
+
+![Multivariate model estimation 3: selected SPM.mat files](image_doc/image_doc05.png)
 </p>
 
-<p>
-![Multivariate model estimation 3: selected SPM.mat files]("C:/lren/mspm/MSPM/image_doc/image_doc05.png")
-</p>
 
-\newpage
 
 - Select the output directory
 
 <p>
-![Multivariate model estimation 4: select output directory]("C:/lren/mspm/MSPM/image_doc/image_doc06.png")
+![Multivariate model estimation 4: select output directory](image_doc/image_doc06.png)
 </p>
 
 <p>
-![Multivariate model estimation 5: selected directory]("C:/lren/mspm/MSPM/image_doc/image_doc07.png")
+![Multivariate model estimation 5: selected directory](image_doc07.png)
 </p>
 
 \newpage
