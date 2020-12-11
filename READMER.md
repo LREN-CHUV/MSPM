@@ -15,7 +15,7 @@ knitr::opts_chunk$set(fig.show = 'hold')
 
 It is strongly adviced to apply z-scoring to your data before the analysis so that the weight of the canonical vectors are interpretable even though the multiple modalities used in the multivariate analysis are not of the same scale. The z-scoring should be applied within each modality and within each voxel. This step can be performed using the function _within_voxel_z_scoring.m_ found in the main folder of the MSPM toolbox. It is very important that the mask you use to constrain the space where the z-scoring is performed (second argument of *within_voxel_z_scoring.m* function) is then used as explicit mask for the univariate models.
 <p>
-![Matlab script to perform within voxel z-scoring]("https://github.com/LREN-CHUV/MSPM/blob/master/image_doc/image_doc00.png?raw=true")
+![Matlab script to perform within voxel z-scoring](https://github.com/LREN-CHUV/MSPM/blob/master/image_doc/image_doc00.png)
 </p>
 
 \newpage
