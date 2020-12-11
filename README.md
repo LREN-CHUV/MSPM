@@ -1,14 +1,14 @@
-"Documentation MSPM toolbox"
+# Step by Step guide for the MSPM toolbox
 
 
 # Preparation of the data
 
 It is strongly adviced to apply z-scoring to your data before the analysis so that the weight of the canonical vectors are interpretable even though the multiple modalities used in the multivariate analysis are not of the same scale. The z-scoring should be applied within each modality and within each voxel. This step can be performed using the function _within_voxel_z_scoring.m_ found in the main folder of the MSPM toolbox. It is very important that the mask you use to constrain the space where the z-scoring is performed (second argument of *within_voxel_z_scoring.m* function) is then used as explicit mask for the univariate models.
 
-![text](https://raw.githubusercontent.com/LREN-CHUV/MSPM/master/image_doc/image_doc00.png)
+![Normalize your Data](image_doc/image_doc00.png)
 
 
-\newpage
+
 
 # Univariate models
 
@@ -80,7 +80,7 @@ This section describes how to estimate the multivariate model.
 - In the output directory you defined just above, there is now a _MSPM.mat_ file.
 
 <p>
-![Multivariate model estimation 6: output file MSPM.mat]("C:/lren/mspm/MSPM/image_doc/image_doc09.png")
+![Multivariate model estimation 6: output file MSPM.mat](image_doc/image_doc09.png)
 </p>
 
 \newpage
@@ -92,7 +92,7 @@ This section describes how to test hypotheses on the multivariate model. This es
 - Open a SPM batch and select _SPM >> Tools >> MSPM >> Analyse_
 
 <p>
-![Set L and c contrasts 1: open batch]("C:/lren/mspm/MSPM/image_doc/image_doc10.png")
+![Set L and c contrasts 1: open batch](image_doc/image_doc10.png)
 </p>
 
 \newpage
@@ -100,11 +100,11 @@ This section describes how to test hypotheses on the multivariate model. This es
 - select the _MSPM.mat_ file produced by the the previous step
 
 <p>
-![Set L and c contrasts 2: select MSPM.mat file]("C:/lren/mspm/MSPM/image_doc/image_doc11.png")
+![Set L and c contrasts 2: select MSPM.mat file](image_doc/image_doc11.png)
 </p>
 
 <p>
-![Set L and c contrasts 3: selected MSPM.mat file]("C:/lren/mspm/MSPM/image_doc/image_doc12.png")
+![Set L and c contrasts 3: selected MSPM.mat file](image_doc/image_doc12.png)
 </p>
 
 \newpage
@@ -112,11 +112,11 @@ This section describes how to test hypotheses on the multivariate model. This es
 - Run batch to open interface to input $L$ and $c$ contrasts
 
 <p>
-![Set L and c contrasts 4: run batch]("C:/lren/mspm/MSPM/image_doc/image_doc13.png")
+![Set L and c contrasts 4: run batch](image_doc/image_doc13.png)
 </p>
 
 <p>
-![Set L and c contrasts 5: interface L and c contrasts]("C:/lren/mspm/MSPM/image_doc/image_doc14.png")
+![Set L and c contrasts 5: interface L and c contrasts](image_doc/image_doc14.png)
 </p>
 
 \newpage
@@ -124,7 +124,7 @@ This section describes how to test hypotheses on the multivariate model. This es
 - To enter a new $L$ contrast on the **data matrix**, press "New contrast" in the Panel $L$ contrast
 
 <p>
-![Set L and c contrasts 6: open L contrast]("C:/lren/mspm/MSPM/image_doc/image_doc14_2.png")
+![Set L and c contrasts 6: open L contrast](image_doc/image_doc14_2.png)
 </p>
 
 \newpage
@@ -132,7 +132,7 @@ This section describes how to test hypotheses on the multivariate model. This es
 - Enter your matrix of contrast (in this example the matrix $eye(5)$ was entered to test an hypothesis on all the modalities of the data matrix $Y$)
 
 <p>
-![Set L and c contrasts 7: enter L contrast]("C:/lren/mspm/MSPM/image_doc/image_doc15.png")
+![Set L and c contrasts 7: enter L contrast](image_doc/image_doc15.png)
 </p>
 
 \newpage
@@ -148,7 +148,7 @@ This section describes how to test hypotheses on the multivariate model. This es
 - Enter your matrix of contrast (_Note: wether you enter a $t$- or an $F$- contrast, the toolbox will always treat it as an $F$ contrast and the output will be a $F$-map. So to avoid confusion, make sure to always use $F$-contrast._)
 
 <p>
-![Set L and c contrasts 9: enter c contrast]("C:/lren/mspm/MSPM/image_doc/image_doc16.png")
+![Set L and c contrasts 9: enter c contrast](image_doc/image_doc16.png)
 </p>
 
 \newpage
@@ -156,7 +156,7 @@ This section describes how to test hypotheses on the multivariate model. This es
 - The output of the specific combination of L and c contrast you just entered above is now in a newly created folder in the exact same path where the MSPM.mat file is. Note that the folder name L_XX_cYY is composed accordingly to the list of L and c contrast you have created (XX = number of the L contrast, YY = number of the c contrast).
 
 <p>
-![Set L and c contrasts 9: output]("C:/lren/mspm/MSPM/image_doc/image_doc17.png")
+![Set L and c contrasts 9: output](image_doc/image_doc17.png)
 </p>
 
 \newpage
@@ -170,7 +170,7 @@ This section describes how to visualize the statistical map of a specific combin
 - The statistical map of a specific combination of $L$ and $c$ contrasts can be simply visualized by using the Results button of SPM12 Menu
 
 <p>
-![Visualize results 1: Results buttons]("C:/lren/mspm/MSPM/image_doc/image_doc18.png")
+![Visualize results 1: Results buttons](image_doc/image_doc18.png)
 </p>
 
 \newpage
@@ -178,7 +178,7 @@ This section describes how to visualize the statistical map of a specific combin
 - Input the SPM.mat file contained in the L_XX_cYY folder of your interest
 
 <p>
-![Visualize results 2: SPM.mat file]("C:/lren/mspm/MSPM/image_doc/image_doc19.png")
+![Visualize results 2: SPM.mat file](image_doc/image_doc19.png)
 </p>
 
 \newpage
@@ -186,7 +186,7 @@ This section describes how to visualize the statistical map of a specific combin
 - Select the corresponding $c$ contrast 
 
 <p>
-![Visualize results 2: SPM.mat file]("C:/lren/mspm/MSPM/image_doc/image_doc20.png")
+![Visualize results 2: SPM.mat file](image_doc/image_doc20.png)
 </p>
 
 \newpage
@@ -196,7 +196,7 @@ This section describes how to visualize the statistical map of a specific combin
 - To visualize canonical vectors simply used the _Check Registration_ funcion of SPM12 Menu. You can also add the statistical map to locate global and local maximum.
 
 <p>
-![Visualize results 2: SPM.mat file]("C:/lren/mspm/MSPM/image_doc/image_doc22.png")
+![Visualize results 2: SPM.mat file](image_doc/image_doc22.png)
 </p>
 
 \newpage
@@ -204,7 +204,7 @@ This section describes how to visualize the statistical map of a specific combin
 - The name of the canonical vector image contains information about which column (X) of the data matrix the canonical vector is related (depVar_X)
 
 <p>
-![Visualize results 2: SPM.mat file]("C:/lren/mspm/MSPM/image_doc/image_doc23.png")
+![Visualize results 2: SPM.mat file](image_doc/image_doc23.png)
 </p>
 
 \newpage
@@ -212,6 +212,6 @@ This section describes how to visualize the statistical map of a specific combin
 - use _Right-click >> Display >> Intensites_ to display the numerical value of the canonical vectors
 
 <p>
-![Visualize results 2: SPM.mat file]("C:/lren/mspm/MSPM/image_doc/image_doc24.png")
+![Visualize results 2: SPM.mat file](image_doc/image_doc24.png)
 </p>
 
