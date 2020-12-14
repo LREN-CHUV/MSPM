@@ -81,7 +81,7 @@ This section describes how to estimate the multivariate model.
 
 
 
-# Testing hypothesess on the multivariate model
+# Testing hypotheses on the multivariate model
 
 This section describes how to test hypotheses on the multivariate model. This essentially reduces to define L contrasts on the data matrix and c contrasts on the design  matrix.
 
@@ -173,7 +173,7 @@ This section describes how to visualize the statistical map of a specific combin
 
 ## Visualize canonical vectors
 
-- To visualize canonical vectors simply used the _Check Registration_ funcion of SPM12 Menu. You can also add the statistical map to locate global and local maximum.
+- To visualize canonical vectors simply use the _Check Registration_ function of SPM12 Menu. You can also add the statistical map to locate global and local maximum.
 
 
 ![Visualize results 2: SPM.mat file](image_doc/image_doc22.png)
