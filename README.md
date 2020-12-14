@@ -12,7 +12,7 @@ It is strongly adviced to apply z-scoring to your data before the analysis so th
 
 # Univariate models
 
-The first step to use the classical interface of SPM12 to estimate one univariate model for each of the modality you would like to input in the multivariate model. It is crucial that the univariate models have the exact same design matrix X, the design matrix you are interested to test in the multivariate model.
+The first step to use the classical interface of SPM12 to estimate one univariate model for each of the modality you would like to input in the multivariate model. __It is crucial that the univariate models have the exact same design matrix X, the design matrix you are interested to test in the multivariate model.__
 
 
 ![Folder with univariate models for each modality of interest](image_doc/image_doc01.png)
@@ -123,7 +123,7 @@ This section describes how to test hypotheses on the multivariate model. This es
 
 
 
-- Enter your matrix of contrast (in this example the matrix eye(5) was entered to test an hypothesis on all the modalities of the data matrix Y)
+- Enter your matrix of contrast (in this example the matrix *eye(5)* was entered to test an hypothesis on all the modalities of the data matrix Y)
 
 
 ![Set L and c contrasts 7: enter L contrast](image_doc/image_doc15.png)
